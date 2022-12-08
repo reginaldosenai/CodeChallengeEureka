@@ -1,0 +1,58 @@
+### Desafio Criação de Classes
+LEVEL: Easy
+
+##Cenário
+
+Você deve desenvolver uma solução em  .NET usando a linguagem de programação C# ou de outra preferência a fim de criar sua 
+estrutura básica de modelos de classes para futuramente implementar soluções para resolver problemas
+relacionados a um Escritório de Advocacia.  
+
+Você deve entregar as tarefas a seguir
+
+
+Preparação
+Antes de começar você deve criar uma solução com 2 projetos
+
+    SolutionEscritorioADV
+        EscritorioModel 
+        EscritorioModelTDD
+
+  Criar  as classes a seguir com as seguintes especificações 
+  
+  
+  Entrega 01 - Classe  Processo
+
+  Atributos
+       ID (inteiro) , Descrição (texto), Motivo (texto), Status (texto), valorPedido (real), valorGanho(real)
+
+  Métodos públicos
+      int  obterGanhoLiquido()  => retornar o saldo liquido de ganho no processo (ValorPedido-ValorGanho)
+
+ 
+  Entrega 02 = Classe Localizacao
+
+  Atributos 
+      ID (inteiro), Cidade (Texto), Estado (texto), Rua (texto)
+  Métodos públicos
+      string enderecoCompleto = > Retorna o endereço completo da Localização criada
+
+      
+  Entrega 03  = Classe Juiz
+      ID (inteiro), Nome (string), AnosTrabalho (inteiro)
+  Métodos públicos
+      bool temBoaExperiencia() => retornar se o juiz criado tem boa experiência. Um juiz tem boa expeeriência quando tem mais de 10 anosDetrabalho.
+
+
+  Entrega 04  = Classe  Tribunal
+      ID (inteiro), Nome (string), localização (Localizacao)
+  Métodos públicos
+      não tem
+  Observação: o atributo localização é do tipo Localização
+
+
+  Entrega 05  = Classe  Reclamacao
+      ID (inteiro), Descricao (string), numeroDeDiasPassado (inteiro)
+  Métodos públicos
+      string situacaoReclamacao() => retornar se a reclamação está atrassada. È atrasado quadno Número de dias passado é maior que 30.
+  Observação: o atributo localização é do tipo Localização
+
